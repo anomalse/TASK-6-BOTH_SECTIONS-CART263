@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title> TASK 6 CART 263 - STRINGS </title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        #container {
+            background: #121720;
+            width: 70vw;
+            margin-top: 50px;
+            margin-left: 15vw;
+            min-height: 400px;
+            padding: 10px;
+        }
+
+        h1 {
+            padding: 5px;
+            text-align: center;
+            background: #121720;
+            color: #e0e3e9;
+        }
+
+
+        #inputDiv {
+            display: block;
+            width: 100%;
+
+        }
+
+        .flex-container {
+            display: flex;
+            width: 100%;
+        }
+
+        #rainbowCol {
+            width: 50%;
+            background: rgba(0, 0, 0, 0.5);
+            margin-left: 50px;
+        }
+
+        #rainbowCol h3 {
+
+            margin: 0;
+            text-align: center;
+            padding: 5px;
+            color: #e0e3e9;
+        }
+
+        #rainbow_text {
+            padding: 10px;
+            color: #e2d9d9;
+            font-size: 14px;
+        }
+
+        #input-col {
+            width: 40%;
+        }
+
+        input[type=text] {
+            width: 300px;
+            display: block;
+        }
+
+        input[type=button] {
+            display: block;
+            margin: 0 auto;
+            margin-top: 10px;
+        }
+
+
+        #stepOneButton,
+        #resetButton {
+            background-color: rgb(29, 50, 90);
+            width: max-content;
+            padding: 5px;
+            text-transform: uppercase;
+            color: white;
+            border-color: white;
+            border-width: 2px;
+            border-style: solid;
+        }
+
+        #stepOneButton:hover,
+        #resetButton:hover {
+            background-color: white;
+            color: cornflowerblue;
+            border-color: cornflowerblue;
+            cursor: pointer;
+        }
+
+        #output {
+            position: relative;
+            padding: 5px;
+            margin-top: 10px;
+            background: white;
+            color: #3c66b8;
+            font-size: 18px;
+            min-height: 300px;
+        }
+
+    
+@keyframes colorChange {
+  0% { color:  #FF0000; }
+  25% { color: #CC5500; }
+  50% { color:  #FFBF00; }
+  75% { color: green; }
+  100% { color: blue; }
+}
+
+.color-change {
+  animation: colorChange 3s infinite alternate;
+}
+
+     
+    </style>
+    <!-- Script files -->
+    <script src="js/main.js"></script>
+</head>
+
+<body>
+
+    <div id="container">
+        <div id="resetButton"> CLICK ME TO RESET </div>
+        <h1>TASK 6 CART 263 - STRINGS </h1>
+        <div id="stepOneButton"> CLICK ME TO FETCH rainbow.txt </div>
+        <div id="inputDiv" style="display:none;">
+            <div class="flex-container">
+                <div id="input-col">
+                    <input type="text" id="phrase" maxlength="50" placeholder="INPUT A PHRASE MAX 50 CHARS" />
+                    <input id="produce-poem" type="button" value="PRODUCE POEM"></input>
+                    <div id="output" style="display:none"> </div>
+                </div>
+                <div id="rainbowCol">
+                    <h3>RAINBOW TEXT RAW</h3>
+                    <div id="rainbow_text"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+
+</html>
