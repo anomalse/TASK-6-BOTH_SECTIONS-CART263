@@ -12,7 +12,7 @@ function run() {
     let everythingWorks = true
     try {
       //taken from lecture notes
-      let response = await fetch('../files/rainbow.txt'); //response
+      let response = await fetch('files/rainbow.txt'); //response
       let textRainbow = await response.text();
       console.log(textRainbow);
       //Working correctly, printing to console
